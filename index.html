@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="section-banner">
+        <div class="pagewidth">
+            <a href="" class="logo">
+                <img src="./images/header-logo.png" alt="">
+            </a>
+            <div class="product">
+                <div class="col1">
+                    <h2 class="product-title">Fat Burning Pre Workout</h2>
+                    <h4 class="product-subtitle">That Helps You Get Shredded 2x As Fast Without Doing 2x The Work<sup>†</sup></h4>
+                    <div class="reviews">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="text">407 reviews</div>
+                    </div>
+                    <div class="product-image desktop-none">
+                        <img style="display: none;" src="./images/product-image1.png" alt="product-image">
+                        <img src="./images/product-image2.png" alt="product-image">
+                        <img style="display: none;" src="./images/product-image3.png" alt="product-image">
+                    </div>
+                    <ul class="benefits">
+                        <li>Accelerate Results of EVERY Workout<sup>†</sup></li>
+                        <li>Burn up to 8,400 More Calories with Every Bottle<sup>†</sup></li>
+                        <li>Elevate Performance Every Time You Train<sup>†</sup></li>
+                    </ul>
+                    <form action="" class="select-fav-qty">
+                        <div class="wrap">
+                            <h5>SELECT-FLAVOR</h5>
+                            <select id="select-flavor">
+                                <option>Choose an option</option>
+                                <option>SMURF JUICE (Blue Gummy Bear)</option>
+                                <option selected="selected">HULK JUICE (Sour Gummy Bear)</option>
+                            </select>
+                        </div>
+                        <div class="wrap">
+                            <h5>SUPPLY</h5>
+                            <p>Select Quantity</p>
+                            <div class="input-wrap">
+                                <input type="radio" id="qty1" name="qty" value="1">
+                                <label for="qty1">
+                                    <p class="detail">1 Bottle (Save 14%)</p>
+                                    <p class="price">$59.99 each</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="radio" id="qty2" name="qty" value="2" checked>
+                                <label for="qty2">
+                                    <p class="detail">2 Bottles (Save 22% + Free Shipping)</p>
+                                    <p class="price">$54.99 each</p>
+                                </label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="radio" id="qty3" name="qty" value="3">
+                                <label for="qty3">
+                                    <p class="detail">Buy 3 / Get 1 Free (+ Free Shipping)</p>
+                                    <p class="price">$49.99 each</p>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit">Buy Now</button>
+                    </form>
+                    <div class="testimonial">
+                        <img src="./images/banner-testimonial.jpg" alt="">
+                        <p><em>I have definitely lost 1-2% body fat using this product for the past 2 weeks. Definitely gives me that fat burning feeling as Im working up a serious sweat!! You will not wrong with this product.</em> <span>CHAD H.</span></p>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="product-image">
+                        <img style="display: none;" src="./images/product-image1.png" alt="product-image">
+                        <img src="./images/product-image2.png" alt="product-image">
+                        <img style="display: none;" src="./images/product-image3.png" alt="product-image">
+                    </div>
+                    <div class="benefit-icons-white">
+                        <img src="./images/benefit-icons-white.png" alt="benefit-icons-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/brush-pattern.png" alt="spliter-image" class="spliter-image-bottom">
+    </section>
+
+    <section id="workout-Performance">
+        <div class="pagewidth">
+            <div class="headings">
+                <h1 class="title">Fat Loss Meets Ultimate <span>Workout Performance</span></h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+                <p class="subtitle">With Just <b>1 Scoop</b> Per Day, You Can <b>Skyrocket Calorie</b> Burning, Resurrect the Metabolism of Your Youth, and Train with the Performance Intensity of an <b>Untamed Minotaur Supports</b><sup>†</sup></p>
+            </div>
+            <div class="supports">
+                <div class="col1">
+                    <div class="support">
+                        <div class="head">
+                            <h4><span>SUPPORTS</span> Converts fat into energy</h4>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="body">
+                            <p>SuperHuman Burn helps to convert white fat (ugly fat) into energy-burning brown fat (good fat).<sup>†</sup></p> 
+                            <p>Resulting in a greater thermogenic burn and healthier metabolism.<sup>†</sup></p> 
+                            <p>Fun fact: Increasing B.A.T. is a game-changer for staying lean year-round.<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="head">
+                            <h4><span>SUPPORTS</span> Cleans Fat From Cells</h4>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="body">
+                            <p>SuperHuman Burn aids in healthy fat oxidation, the process of stored fat being transported into the bloodstream to be used as energy.<sup>†</sup></p> 
+                            <p>It’s basically the “spring cleaning” of unwanted fat in your cells.<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="head">
+                            <h4><span>SUPPORTS</span> Clean, Powerful Energy</h4>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="body">
+                            <p>SuperHuman Burn will take you places. Where? Just follow all your new roadmap poppin’ veins!<sup>†</sup></p> 
+                            <p>SuperHuman Burn features 8,600 mg of premium performance ingredients in every serving to help maximize pump and performance during every workout.<sup>†</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="support">
+                        <div class="head">
+                            <h4><span>SUPPORTS</span> Increased Metabolism Burn</h4>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="body">
+                            <p>Increasing your metabolic rate means you are actually boosting your body’s long-term ability to melt fat for fuel.</p> 
+                            <p>SuperHuman Burn is the FIRST and ONLY Pre-Workout to include MitoBurn™ &amp; CaloriBurn™, two NEW powerful calorie burning and metabolic boosting ingredients<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="head">
+                            <h4><span>SUPPORTS</span> Increased Strength, Power, & Endurance</h4>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="body">
+                            <p>Increasing your metabolic rate means you are actually boosting your body’s long-term ability to melt fat for fuel.</p> 
+                            <p>SuperHuman Burn is the FIRST and ONLY Pre-Workout to include MitoBurn™ &amp; CaloriBurn™, two NEW powerful calorie burning and metabolic boosting ingredients<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="support">
+                        <div class="head">
+                            <h4><span>SUPPORTS</span> Explosive Gym Intensity & Focus</h4>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div class="body">
+                            <p>Elevate your energy like you’re strapped to a damn jetpack with our SuperHuman Xtend® energy complex.<sup>†</sup></p> 
+                            <p>Scientifically-formulated to help you get sh*t done all day long without worrying about crashing hard a couple hours later.<sup>†</sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="happy-Customers">
+        <img src="./images/brush-pattern-1-1.png" alt="spliter-image" class="spliter-image-top">
+        <div class="pagewidth">
+            <div class="headings">
+                <h1 class="title">Over <span>500,000 Happy Customers</span> <br> Worldwide Trust Alpha Lion!</h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+                <p class="subtitle">
+                    <img src="./images/stars.png" alt="">
+                    5800+ Reviews | Average 4.5 Stars
+                </p>
+            </div>
+        </div>
+        <div class="customers-slider">
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="quotes">”</h3> 
+                <h3>SUPERHUMAN BURN</h3>
+                <p>It’s try favorite product I use I do not drink coffee and it helps me keep my
+                workouts strong and my clients who also use it extremely happy</p>
+                <div class="author">
+                    <img src="./images/customer1.jpg" alt="">
+                    <p class="text">Jimmy S.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="quotes">”</h3> 
+                <h3>SUPERHUMAN BURN</h3> 
+                <p>I have definitely lost 1-2% body fat using this product for the past 2 weeks.
+                    Definitely gives me that fat burning feeling as Im working up a serious sweat!! You
+                    will not wrong with this product.</p> 
+                <div class="author">
+                    <img src="./images/customer2.jpg" alt="">
+                    <p class="text">Chad H.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="quotes">”</h3> 
+                <h3>SUPERHUMAN BURN</h3> 
+                <p>After a long day at work and an hour drive home, 1 scoop gets me more than ready to
+                    hit the gym and knock out a great workout!!</p> 
+                <div class="author">
+                    <img src="./images/customer3.jpg" alt="">
+                    <p class="text">Shaun B.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="quotes">”</h3> 
+                <h3>SUPERHUMAN BURN</h3> 
+                <p>Its long lasting and taste great. It definitely helps with my performance at the gym
+                    and at work!</p> 
+                <div class="author">
+                    <img src="./images/customer4.jpg" alt="">
+                    <p class="text">Joshua E.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="quotes">”</h3> 
+                <h3>A++++</h3> 
+                <p>Awesome! I paired it with Gains Candy MitoBurn.</p> 
+                <div class="author">
+                    <img src="./images/customer5.jpg" alt="">
+                    <p class="text">Cyndi J.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/brush-pattern-copy-1-2.png" alt="spliter-image" class="spliter-image-bottom">
+    </section>
+
+    <section id="asSeenOn">
+        <div class="pagewidth">
+            <h3 class="title">As Seen On</h3>
+            <div class="seenOnImages">
+                <a href="" class="imgWidth">
+                    <img width="165" src="./images/Men_s_Health_logo_black-2048x455.png" alt="">
+                </a>
+                <a href="" class="imgWidth">
+                    <img width="106" src="./images/body-building-logo.png" alt="">
+                </a>
+                <a href="" class="imgWidth">
+                    <img width="147" src="./images/stack-3d-logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <img src="./images/brush-pattern-2.png" alt="spliter-image" class="spliter-image-bottom">
+    </section>
+    
+    <section id="magicalHood">
+        <div class="pagewidth">
+            <div class="headings">
+                <h1 class="title">Under The Magical Hood Of <span>SuperHuman Burn</span></h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+                <p class="subtitle">5 powerful matrices help you turn every workout into an all-out assault on the weights and your fat cells.</p>
+            </div>
+            <div class="superHuman">
+                <div class="col1">
+                    <div class="details">
+                        <div class="wrap">
+                            <img src="./images/pump-performance-icon.png" alt="">
+                            <div class="text">
+                                <p>SUPERHUMAN PUMP & PERFORMANCE</p>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="popup">
+                                <p>8600mg of premium workout Performance ingredients to help elevate training intensity, and performance during every workout.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="wrap">
+                            <img src="./images/energy-matrix-icon.png" alt="">
+                            <div class="text">
+                                <p>SUPERHUMAN FAT BURN MATRIX</p>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="popup">
+                                <p>Powered By: SuperHuman Xtend™ All Day Energy Complex.<sup>†</sup> <br> The breakthrough science of SuperHuman Xtend™ All Day Energy Complex, utilized in SuperHuman Burn, is based on an optimal ratio of different forms of caffeine and l-theanine designed to provide all-day energy without the nasty dreaded post-workout crash.<sup>†&nbsp;</sup></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="main-image">
+                        <img src="./images/Group_16.png" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="wrap">
+                            <img src="./images/Ellipse-3.png" alt="">
+                            <div class="text">
+                                <p>SUPERHUMAN FOCUS MATRIX</p>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="popup">
+                                <p>Powered by 4 patented fat-burning ingredients that target fat from all 3 Essential Fronts—not just 1! Giving you an unfair calorie-burning advantage every single day, whether you are in the gym or it’s a rest day!<sup>†</sup> Burn Up to 8,400 EXTRA Calories Per Bottle!<sup>†</sup></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="details">
+                        <div class="wrap">
+                            <div class="text">
+                                <p>SUPERHUMAN FOCUS MATRIX</p>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <img src="./images/Ellipse-4.png" alt="">
+                            <div class="popup">
+                                <p>3000mg of focus enhancing ingredients so you can say goodbye to endless scrolling on your phone in between sets. Just pure 100% focus to give you the best mind muscle connection.<sup>†</sup></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="wrap">
+                            <div class="text">
+                                <p>SUPERHUMAN ABSORPTION MATRIX</p>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <img src="./images/Ellipse-5.png" alt="">
+                            <div class="popup">
+                                <p>Absorb more greatness in every serving thanks to our double-patented nutrient absorption matrix!<sup>†</sup> BioPerine® and AstraGin® are two powerful patented ingredients that have been clinically researched and proven to enhance nutrient absorption by up to 68% more than normal!<sup>†</sup> This means no strength, energy, pump, performance, or fat loss behind.<sup>†</sup></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/brush-pattern-1.png" alt="spliter-image" class="spliter-image-bottom">
+    </section>
+
+    <section id="ingredientBreakdown">
+        <div class="pagewidth">
+            <div class="headings">
+                <h1 class="title">Ingredient  <span>Breakdown</span></h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+                <p class="subtitle">Formulated With <b>100% Transparency</b> Including <b>7 Premium Patented Ingredients</b> at Clinical Dosages.</p>
+            </div>
+            <div class="ingredients">
+                <div class="col">
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i> 
+                            <p>MITOBURN™ (L-BAIBA) <span>500mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p>A NEW thermogenic powerhouse that works mind-blowing wonders for fat-burning results by:</p> 
+                            <ul> 
+                                <li>Amplifying and accelerating results of exercise <sup>†</sup></li> 
+                                <li>Helps to convert ugly fat into good brown fat<sup>†</sup></li> 
+                                <li>Supporting healthy blood sugar levels<sup>†</sup></li> 
+                                <li>Helps to Increase fat oxidation<sup>†</sup></li> 
+                                <li>Has the ability to “mimic” the effects of exercise and therefore helps speed up results on rest days too!<sup>†</sup></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>CALORIBURN™ (GRAINS OF PARADISE EXTRACT) <span>40mg</span></p>
+                        </div>
+                        <div class="body">
+                            <P>A 100% natural, patented, and pure Grains of Paradise extract that will spice up your fat-burning life (because it’s a spice!): </P>
+                            <ul> 
+                                <li>Helps increase metabolic rate by up to 400% <sup>†</sup></li> 
+                                <li>Helps elevate daily caloric-burning potential<sup>†</sup></li> 
+                                <li>Helps reduce blood sugar levels for less fat storage<sup>†</sup></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>COCOABUTEROL® (COCOA EXTRACT) <span>100mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p>Cocoabuterol® is derived from cocoa and contains natural alkaloids that have been shown to powerfully help with: </p> 
+                            <ul> 
+                                <li>Accelerating fat burning and muscle building <sup>†</sup> </li> 
+                                <li>Activating thermogenic fat-burning within the body<sup>†</sup> </li> 
+                                <li>Boosting energy &amp; mood<sup>†</sup> </li> 
+                                <li>Enhancing exercise performance<sup>†</sup> </li> 
+                                <li>Improving cardiovascular health<sup>†</sup> </li> 
+                                <li>Increasing nitric oxide production<sup>†</sup> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>ADVANTRA-Z® (BITTER ORANGE EXTRACT) <span>100mg</span></p>
+                        </div>
+                        <div class="body">
+                            <P>Advantra Z® is a patented extract of Citrus Aurantium (a.k.a. Bitter Orange), a fruit rich in alkaloids known to enhance weight loss and help with: </P>
+                            <ul> 
+                                <li>Increasing lipolysis (fat breakdown) within the body <sup>†</sup> </li> 
+                                <li>Assisting a healthy basal metabolic rate<sup>†</sup> </li> 
+                                <li>Elevating energy expenditure<sup>†</sup> </li> 
+                                <li>Suppressing that dangerous appetite<sup>†</sup> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>CHOLINE BITARTRATE <span>1000mg</span></p>
+                        </div>
+                        <div class="body">
+                            <P>An essential nutrient that helps to: </P>
+                            <ul> 
+                                <li>Increase acetylcholine levels in the body, resulting in greater mind-muscle connection. <sup>†</sup> </li> 
+                                <li>Increase fatty acid oxidation when combined with Carnitine.<sup>†</sup> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>ACETYL-L-CARNITINE <span>1000mg</span></p>
+                        </div>
+                        <div class="body">
+                            <ul> 
+                                <li>Increase fatty acid oxidation when combined with Choline. <sup>†</sup> </li> 
+                                <li>Helps to reduce mental fatigue, protects the brain, and helps energy production.<sup>†</sup> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>L-TYROSINE <span>1000mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p>A non-essential amino acid that supports mental focus and energy by restoring important neurotransmitters that get depleted with exercise.<sup>†</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>TAURINE <span>1000mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p>Is an amino acid that plays several important roles in improving exercise performance by reducing fatigue, increasing fat burning and decreasing muscle damage.<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>L- CITRULLINE <span>4000mg</span></p>
+                        </div>
+                        <div class="body">
+                            <ul> 
+                                <li>Supports an Increase in Nitric Oxide levels to give the ultimate pump.<sup>†</sup> </li> 
+                                <li>Increases nutrient delivery, and helps rid lactic acid away from the working muscles, thanks to its ability to boost arginine levels with the body.<sup>†</sup> </li> 
+                                <li>Boosts performance in both aerobic and anaerobic exercise.<sup>†</sup> </li> 
+                                <li>Can help reduce muscle soreness, make you resistant to fatigue, and increase workout capacity<sup>†</sup> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>BETA ALANINE <span>3600mg</span></p>
+                        </div>
+                        <div class="body">
+                            <P>An amino acid that increases skeletal muscle carnosine levels that helps: </P>
+                            <ul> 
+                                <li>Muscular endurance by reducing lactic acid build-up.<sup>†</sup> </li> 
+                                <li>Enhanced workout capacity, power output, strength, and body composition.<sup>†</sup> </li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>CAFFEINE ANHYDROUS <span>225mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p>A fast-acting form of caffeine that has the ability to increase energy levels and enhance physical performance.<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>INFINERGY™ DI-CAFFEINE MALATE <span>100mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p>A patented slow releasing form of caffeine that takes the reins after caffeine anhydrous and acts as a second jolt of energy, helping to keep energy levels high as caffeine anhydrous begins to wear off.<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>L-THEANINE <span>225mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p>An amino acid abundant in green tea leaves. It synergistically works with both caffeine sources to eliminate that debilitating crash normal with pre-workouts and energy drinks.<sup>†</sup></p>
+                        </div>
+                    </div>
+                    <div class="ingredient">
+                        <div class="head">
+                            <i class="fas fa-arrow-down"></i>
+                            <p>ASTRAGIN® + BIOPERINE® <span>25 mg ,10 mg</span></p>
+                        </div>
+                        <div class="body">
+                            <p><b>BioPerine®:</b><br>Enhances nutrient bioavailability by inhibiting enzymes that metabolize nutrients. It has also been noted to stimulate amino acid transporters, facilitating greater uptake of amino acids into the bloodstream.<sup>†</sup></p> 
+                            <p> <b>AstraGin®:</b><br>Shown in 16 in-vitro and eight in-vivo studies to increase bioavailability and absorption of several key nutrients, including fish oil (100% increase), L-Citrulline (45% increase), and Curcumin (92% increase).<sup>†</sup></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="full-ingredient">
+                <div class="head">
+                    <h4>FULL INGREDIENTS LIST <i class="fas fa-arrow-down"></i></h4>
+                </div>
+                <div class="body">
+                    <img src="./images/AlphaLion-SuperHumanBurn-SuppFact.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featureSection">
+        <img src="./images/brush-pattern-1-1-1.png" alt="spliter-image" class="spliter-image-top">
+        <div class="pagewidth">
+            <div class="features">
+                <div class="feature">
+                    <img src="./images/lines1.png" alt="">
+                    <p>100% Transparent Label</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/Vector-Smart-Object-1.png" alt="">
+                    <p>Highly Bioavailable Ingredients</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/cgmp-icon.png" alt="">
+                    <p>cGMP <br> Manufactured</p>
+                </div>
+                <div class="feature">
+                    <img src="./images/research.png" alt="">
+                    <p>Researched Backed Ingredients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="superHumanSpeed">
+        <img src="./images/brush-pattern-orange-1.png" alt="spliter-image" class="spliter-image-top">
+        <div class="pagewidth">
+            <div class="col1">
+                <video class="video" src="./images/SuperHuman_Burn_Adjusted_Color.mov" autoplay="1" loop="1" playsinline="1" controlslist="nodownload">
+                </video>
+            </div>
+            <div class="col2">
+                <h1>Choose to accelerate results at SuperHuman Speed.</h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+                <a href="" class="button">BUY SUPERHUMAN BURN NOW</a>
+            </div>
+        </div>
+        <img src="./images/brush-pattern-copy-1-1.png" alt="spliter-image" class="spliter-image-bottom">
+    </section>
+
+    <section id="productFaqs">
+        <div class="pagewidth">
+            <div class="headings">
+                <h1 class="title">Product <span>FAQs</span></h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+            </div>
+            <div class="faqs">
+                <div class="faq">
+                    <p class="head">How Many Bottles Should I Order? <i class="fas fa-caret-down"></i></p>
+                    <div class="body">
+                        <p>This is dependent on how much fat you have to burn. We do recommend taking SuperHuman Burn for at least 90 days since the fat burning and workout performance results are cumulative. Taking it for 90 days will allow you to experience the optimal results and the true power of SuperHuman Burns ingredients.
+                            <br><br>
+                            Therefore, we strongly recommend you take advantage of our Buy 3 get 1 Free discount package. Not only will you save $80 but you’ll also get Free Shipping and you’ll ensure you lock in your supply of SuperHuman Burn in the event we do run out which happens often due to the speciality of the potent ingredients found inside of SuperHuman Burn. Running out results in all your hard work becoming undone and progress halting.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <p class="head">Can I Take It While Fasting? <i class="fas fa-caret-down"></i></p>
+                    <div class="body">
+                        <p>Yes SuperHuman Burn is calorie free and will not break your fast. In fact, SuperHuman Burn combined with fasting will only accelerate your results further and we highly recommend it.<sup>†</sup></p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <p class="head">How Much Caffeine Does It Contain? <i class="fas fa-caret-down"></i></p>
+                    <div class="body">
+                        <p>Per 1 scoop there is 150mg of caffeine coming from 2 sources.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <p class="head">Will SuperHuman Burn Cause Me To Crash Or Give Me The Jitters? <i class="fas fa-caret-down"></i></p>
+                    <div class="body">
+                        <p>SuperHuman Burn uses our proprietary SuperHuman Xtend™ All Day Energy Complex which is based on an optimal ratio of different forms of caffeine and l-theanine designed to provide all-day energy without the nasty dreaded post workout crash.<sup>†</sup></p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <p class="head">Does It Cause The Tingles? <i class="fas fa-caret-down"></i></p>
+                    <div class="body">
+                        <p>You may experience the tingles but be rest assured this is from the beta alanine working its magic and you have nothing to worry about. Beta Alanine is an important ingredient as it prevents the lactic acid build up in your muscle giving you better muscular endurance and overall better results.<sup>†</sup></p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <p class="head">Other Pre Workouts Cause Me To Feel Nauseous And Sick. Will Yours Do The Same? <i class="fas fa-caret-down"></i></p>
+                    <div class="body">
+                        <p>We have not received any feedback of SuperHuman burn causing any type of nausea or sickness. A lot of pre workouts contain an ingredient called Yohimbine which can cause nausea and sickness. Superhuman Burn is free from yohimbine.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <p class="head">What If It Doesn’t Work For Me? <i class="fas fa-caret-down"></i></p>
+                    <div class="body">
+                        <p>Simply return your bottle of SuperHuman Burn for a full money back guarantee. SuperHuman Burn is backed by the industry’s first 365 day money back guarantee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vitamin">
+        <div class="pagewidth">
+            <div class="col">
+                <img class="vlogo" src="./images/vitamin-logo.png" alt="">
+                <h1 class="title">Vitamin Angels Partnership!</h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+                <p>Through our partnership with Vitamin Angels, for every order under $100 we’re privileged to donate a 12-month supply of essential vitamins to a child at risk of malnutrition. And for every order over $100, we donate a year’s supply of these same essential vitamins to two children worldwide.</p>
+            </div>
+        </div>
+        <img src="./images/black-pattern-1.png" alt="spliter-image" class="spliter-image-bottom">
+    </section>
+
+    <section id="guarantee">
+        <div class="pagewidth">
+            <div class="col1">
+                <img class="vlogo" src="./images/stamp365_days_guarantee.png" alt="">
+            </div>
+            <div class="col2">
+                <h1 class="title">365 Day Money Back Guarantee</h1>
+                <img src="./images/title-pattern.png" alt="title-pattern" class="title-pattern">
+                <p>WE STAND BY THE INDUSTRY’S ONLY 365-DAY MONEY-BACK PROMISE <br>
+                    If you don’t have an amazing experience with SuperHuman Burn, you have 365 days to ask for a full refund. We even let you keep the tub!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="pagewidth">
+            <div class="footer-top">
+                <div class="col1">
+                    <img src="./images/header-logo.png" alt="">
+                </div>
+                <div class="col2">
+                    <p><sup>†</sup> STATEMENTS ON THIS WEBSITE HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. PRODUCTS ARE NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.</p>
+                    <p class="copyright"><strong>&copy; 2021, Alpha Lion,</strong>. All rights reserved</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="">Privacy Policy</a> |
+                <a href="">Terms of Services</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('section .body').show();
+            $('section .body').hide();
+            $('section .head').click(function(){
+                $(this).siblings().slideToggle();
+            });
+            $('input[type=radio][name=qty]').change(function() {
+                if (this.value == '1') {
+                    $('.product-image img:nth-child(1)').show().siblings().hide();
+                }
+                else if (this.value == '2') {
+                    $('.product-image img:nth-child(2)').show().siblings().hide();
+                }
+                else if (this.value == '3') {
+                    $('.product-image img:nth-child(3)').show().siblings().hide();
+                }
+            });
+            if($(window).scrollTop() >= $('.main-image').offset().top - $(window).height()){
+                $('.main-image').parent().addClass('animate');
+            }
+            $(window).scroll(function(){
+                if($(window).scrollTop() >= $('.main-image').offset().top - $(window).height()){
+                    $('.main-image').parent().addClass('zoomIn');
+                }
+            });
+            $('.customers-slider').slick({
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                responsive: [
+                    {
+                    breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                    breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
