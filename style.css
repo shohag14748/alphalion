@@ -328,6 +328,7 @@ margin-bottom: 25px;
         max-width: 250px;
         margin: auto;
         display: block;
+        width: 100%;
     }
     #section-banner .product .col2 .benefit-icons-white{
         margin: 2% 30% 0% 30%;
