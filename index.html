@@ -32,11 +32,7 @@
                         </div>
                         <div class="text">407 reviews</div>
                     </div>
-                    <div class="product-image desktop-none">
-                        <!-- <img style="display: none;" src="./images/product-image1-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image1-lowxr.png" alt="product-image"> -->
-                        <!-- <img src="./images/product-image2-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image2-lowxr.png" alt="product-image"> -->
-                        <!-- <img style="display: none;" src="./images/product-image3-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image3-lowxr.png" alt="product-image"> -->
-                    </div>
+                    <div class="product-image desktop-none"></div>
                     <ul class="benefits">
                         <li>Accelerate Results of EVERY Workout<sup>†</sup></li>
                         <li>Burn up to 8,400 More Calories with Every Bottle<sup>†</sup></li>
@@ -85,9 +81,9 @@
                 </div>
                 <div class="col2">
                     <div class="product-image">
-                        <!-- <img style="display: none;" src="./images/product-image1-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image1-lowxr.png" alt="product-image"> -->
-                        <!-- <img src="./images/product-image2-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image2-lowxr.png" alt="product-image"> -->
-                        <!-- <img style="display: none;" src="./images/product-image3-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image3-lowxr.png" alt="product-image"> -->
+                        <img style="display: none;" src="./images/product-image1-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image1-lowxr.png" alt="product-image">
+                        <img src="./images/product-image2-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image2-lowxr.png" alt="product-image">
+                        <img style="display: none;" src="./images/product-image3-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image3-lowxr.png" alt="product-image">
                     </div>
                     <div class="benefit-icons-white">
                         <img src="./images/benefit-icons-white.png" alt="benefit-icons-white">
@@ -740,6 +736,7 @@
                     $('.main-image').parent().addClass('zoomIn');
                 }
             });
+            $('.col1 .product-image').prepend($('.col2 .product-image').clone());
             $('.customers-slider').slick({
                 slidesToShow: 3,
                 autoplay: true,
