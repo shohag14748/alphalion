@@ -281,7 +281,7 @@ margin-bottom: 25px;
 }
 #section-banner .product .product-image img[style="display: none;"]{
     position: absolute;
-    margin-top: 200vh;
+    margin-top: 200vh !important;
 }
 @media screen and (max-width:1199px) {
     #section-banner {
