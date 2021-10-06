@@ -33,9 +33,9 @@
                         <div class="text">407 reviews</div>
                     </div>
                     <div class="product-image desktop-none">
-                        <img style="display: none;" src="./images/product-image1-lowxr.png" alt="product-image">
-                        <img src="./images/product-image2-lowxr.png" alt="product-image">
-                        <img style="display: none;" src="./images/product-image3-lowxr.png" alt="product-image">
+                        <img style="display: none;" src="./images/product-image1-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image1-lowxr.png" alt="product-image">
+                        <img src="./images/product-image2-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image2-lowxr.png" alt="product-image">
+                        <img style="display: none;" src="./images/product-image3-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image3-lowxr.png" alt="product-image">
                     </div>
                     <ul class="benefits">
                         <li>Accelerate Results of EVERY Workout<sup>†</sup></li>
@@ -85,9 +85,9 @@
                 </div>
                 <div class="col2">
                     <div class="product-image">
-                        <img style="display: none;" src="./images/product-image1-lowxr.png" alt="product-image">
-                        <img src="./images/product-image2-lowxr.png" alt="product-image">
-                        <img style="display: none;" src="./images/product-image3-lowxr.png" alt="product-image">
+                        <img style="display: none;" src="./images/product-image1-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image1-lowxr.png" alt="product-image">
+                        <img src="./images/product-image2-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image2-lowxr.png" alt="product-image">
+                        <img style="display: none;" src="./images/product-image3-lowxr.png" onload="lzld(this)" onerror="lzld(this)" data-frz-src="./images/product-image3-lowxr.png" alt="product-image">
                     </div>
                     <div class="benefit-icons-white">
                         <img src="./images/benefit-icons-white.png" alt="benefit-icons-white">
@@ -691,7 +691,7 @@
             </div>
         </div>
     </section>
-
+    <!-- <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onload="lzld(this)" onerror="lzld(this)" data-frz-src="https://d2fc363sv189q.cloudfront.net/web/common/pvsg-seal3249687-lowxr.png" alt="Money Back"> -->
     <footer>
         <div class="pagewidth">
             <div class="footer-top">
@@ -712,6 +712,7 @@
 
 
     <script type="text/javascript" src="./jquery-3.6.0.min.js"></script>
+    <script src="https://d2fc363sv189q.cloudfront.net/web/scripts/lazyload.min.js"></script>
     <script type="text/javascript" src="./slick.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -759,19 +760,38 @@
                     }
                 ]
             });
-
-            // var query = "(-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
-            // $('img').each(function(){
-            //     var dsrc = $(this).attr('data-frz-src');
-            //     if(typeof dsrc !== typeof undefined && dsrc !== false){
-            //         dsrc = dsrc.replace('-lowxr','-1xr');
-            //         $(this).attr('data-frz-src',dsrc);
-            //     }else{
-            //         var src = 
-            //     }
-            // })
-
         });
     </script>
+    <!-- swap images to low, 1x or 2x whether already lazyloaded or not -->
+<script>
+    $(document).ready(function(){
+        var query = "(-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+        $('img').each(function(){
+            var dsrc = $(this).attr('data-frz-src');
+            if (typeof dsrc !== typeof undefined && dsrc !== false) {
+                dsrc = dsrc.replace('-lowxr','-1xr');
+                $(this).attr('data-frz-src',dsrc);
+            }else{
+                var src = $(this).attr('src').replace('-lowxr','-1xr');
+                $(this).attr('src',src);
+            }
+        });
+
+        if (matchMedia(query).matches) {
+//                  // do high-dpi stuff
+            $('img').each(function(){
+                var dsrc = $(this).attr('data-frz-src');
+                if (typeof dsrc !== typeof undefined && dsrc !== false) {
+                    dsrc = dsrc.replace('-lowxr','-2xr').replace('-1xr','-2xr');
+                    $(this).attr('data-frz-src',dsrc);
+                }else{
+                    var src = $(this).attr('src').replace('-lowxr','-2xr').replace('-1xr','-2xr');
+                    $(this).attr('src',src);
+                }
+            });
+        }
+
+    });
+</script>
 </body>
 </html>
