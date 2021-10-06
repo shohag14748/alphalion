@@ -39,7 +39,7 @@ sup {
 }
 #section-banner {
     background-color: #fff;
-    /* background-image: url(./images/banner-bg.jpeg); */
+    background-image: url(./images/banner-bg.jpeg);
     background-position: initial;
     background-repeat: no-repeat;
     background-size: cover;
@@ -279,10 +279,7 @@ margin-bottom: 25px;
     width: 100%;
     left: 0;
 }
-#section-banner .product .product-image img[style="display: none;"]{
-    position: absolute;
-    margin-top: 200vh !important;
-}
+
 @media screen and (max-width:1199px) {
     #section-banner {
         background-position: center;
@@ -375,7 +372,7 @@ margin-bottom: 25px;
 }
 
 #workout-Performance{
-    /* background-image: url(./images/sh-burn-hulk-1-1.png); */
+    background-image: url(./images/sh-burn-hulk-1-1.png);
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 17% auto;
@@ -538,7 +535,7 @@ margin-bottom: 25px;
 }
 
 #happy-Customers{
-    /* background-image: url(./images/customer-bg.jpeg); */
+    background-image: url(./images/customer-bg.jpeg);
     background-size: 100% 100% ;
     padding: 180px 0 160px;
     position: relative;
@@ -1387,7 +1384,7 @@ margin-bottom: 25px;
 
 
 #vitamin{
-    /* background-image: url(./images/vitamin-1.jpeg); */
+    background-image: url(./images/vitamin-1.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1456,7 +1453,7 @@ margin-bottom: 25px;
 }
 
 #guarantee{
-    /* background-image: url(./images/money-bg.jpeg); */
+    background-image: url(./images/money-bg.jpeg);
     background-position: center center;
     background-size: cover;
     padding: 220px 0px 100px 0px;
